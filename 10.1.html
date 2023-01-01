@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        button{
+            border-radius: 5px;
+            border-color: black;
+            background-color: transparent;
+            margin : auto;
+            width: 100px;
+
+        }
+        button:hover {
+            color: white;
+            background-color: black;
+
+        }
+        h1 {
+            font-size: 1em;
+            margin: 5vh;
+            
+        }
+        header {
+            background-color: azure;
+            display: flex;
+            flex-direction: row;
+            padding : 5vh;
+        }
+        .hello {
+            margin: auto;
+            width: 50vh;
+        }
+        @media (max-width : 700px)
+        {
+            header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <div id = " hello"> -->
+        <h1>hello world</h1>
+        <button>click on me</button>
+        <!-- </div> -->
+    </header>
+</body>
+</html>

@@ -14,8 +14,8 @@
         }
         .btn{
             color : cadetblue;
-            margin: 5px;
-            border-radius: 10px;
+            margin: 0.5vh;
+            border-radius: 1.1vh;
             border: solid 1px cadetblue;
             background: transparent;
             text-align: center;
@@ -51,9 +51,10 @@
             border-radius: 15px;
             background-color: cadetblue;
             border: 5px solid whitesmoke;
-            width: fit-content;
-            margin-bottom: 20px;
-            height:400px;
+            /* width: fit-content; */
+            margin-bottom: 2vh;
+            /* margin-left:10vh ; */
+            height: fit-content;
      
         }
 
@@ -63,11 +64,12 @@
         h2,h3, pre,p {
             text-align:justify;
             color: whitesmoke;
-            padding: 5px;
-            margin: 10px;
-            margin-bottom: 10px;
+            padding: 0.5vh;
+            margin: 1vh;
+            margin-bottom: 1vh;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+        p {    font-size: 1.3em;}
         h1,a,.box,#nanpic,.allbtns{
         margin-right: auto;
         margin-left: auto;
@@ -75,11 +77,12 @@
         h1{width: 50%;} a{margin: 5%; padding: 3%;}
 
         #nandpic {
-             width: 60%    ;
+             width: 20em    ;
             border-left: 5px whitesmoke solid;
             border-radius: 15px;
         } 
-        #box1 {max-width : 45%} 
+        /* #box1 {max-width : 25%}  */
+        
         /* #st{float: left; width: 48%; #box1 {max-width : 45%}  padding: 10px;} */
         /* #nd{float: right ; width: 48%;padding: 10px;} */
         /* #rd{float: left;width: 48%;padding: 10px;} */
@@ -92,12 +95,12 @@
             margin-right: auto;
             padding: 5%;
             border-radius: 5px;
-            height: 70%;
+            height: 30em;
         }
         main{
             display: flex;
         }
-        @media (max-width : 1500px)
+        @media (max-width : 350vh)
         {
              main{display: block;
                 
@@ -107,7 +110,13 @@
             }  
         }
 
-
+        @media(min-width:1000px)
+        {
+            .box {
+                height: fit-content;
+                width: fit-content;
+            }
+        }
     </style>
 </head>
 <body>
