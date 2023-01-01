@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.5</title>
+
+    <style>
+        .nav {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .nav-logo {
+            margin-right: auto;
+        }
+
+        @media (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="nav">
+        <h1 class="nav-logo" >APPLESEEDS</h1>
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
+    </nav>
+</body>
+
+</html>
