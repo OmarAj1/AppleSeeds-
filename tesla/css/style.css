@@ -184,7 +184,7 @@ nav {
 #home-info .info-img {
   float: left;
   width: 70%;
-  background: url('/Screenshot\ 2022-12-31\ 193559.png') no-repeat;
+  background: url('Screenshot\ 2022-12-31\ 193559.png') no-repeat;
   min-height: 100%;
   max-width: 1200px;
   object-fit: cover;
@@ -231,7 +231,7 @@ nav {
 #features {
   margin: auto;
   width: 40%;
-  padding-top: 400px;
+  padding-top: 350px;
   min-width: 200px;
 }
 
