@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {box-sizing: border-box;}
+        * {box-sizing: border-box;
+        padding: 0%;
+    margin: 0%  ;}
         nav {
         padding: 5px;
 
@@ -69,19 +71,22 @@
             margin-bottom: 1vh;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        p {    font-size: 1.3em;}
-        h1,a,.box,#nanpic,.allbtns{
+        p {    font-size: 1.5em;
+        word-spacing: -1.5px;}
+        h1,a,.box,#nandpic,.allbtns{
         margin-right: auto;
         margin-left: auto;
         }
         h1{width: 50%;} a{margin: 5%; padding: 3%;}
 
         #nandpic {
-             width: 20em    ;
+             width: 25em    ;
             border-left: 5px whitesmoke solid;
             border-radius: 15px;
         } 
-        /* #box1 {max-width : 25%}  */
+        #box1 {max-width : 70%
+        
+        } 
         
         /* #st{float: left; width: 48%; #box1 {max-width : 45%}  padding: 10px;} */
         /* #nd{float: right ; width: 48%;padding: 10px;} */
@@ -90,46 +95,106 @@
         /* main {max-width: 1400px; width: 80%;} */
 
         #main  {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 25em;
             padding: 5%;
             border-radius: 5px;
-            height: 30em;
+            height: 25em;
         }
         main{
             display: flex;
         }
-        @media (max-width : 350vh)
+        @media (max-width : 5000px)
         {
-             main{display: block;
-                
+             main{
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap:   wrap;
+                margin-top: 100px;
+                }
+                                
             }   
-            box {
-                width: 800px;
-            }  
-        }
+            .box {
+                width: 800px; }}
 
-        @media(min-width:1000px)
+              
+        
+
+        @media(min-width:800px)
         {
             .box {
                 height: fit-content;
-                width: fit-content;
+                display: inline-grid;
+                margin-top: 100px;
+
+
             }
         }
+        
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0.8;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    padding: 0;
+    background-color: #333;
+    min-width: 600px;
+    z-index: 99;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+
+
+}
+
+.navbar a:hover {
+    border-bottom: cadetblue solid 2px;
+}
+
+.navbar ul {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+body {
+    background: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70830.jpg?w=1480&t=st=1672736068~exp=1672736668~hmac=2e784c67bab9ba12a0d9e12b544803e4e7d7fcb5ab831e4cd620d58a679ce7a5') no-repeat center center/cover;
+    height: fit-content;
+    position: relative;
+    color: #fff;
+}
+
     </style>
 </head>
 <body>
-    <section class="allbtns">
-        <button onclick="#About" class="btn">About</button>
-        <button onclick="#Goals" class="btn">Goals</button>
-        <button onclick="#Services" class="btn">Services</button>
-        <button onclick="#Contact" class="btn">Contact</button>
-    </section>
+    <navbar style="margin-bottom: 10000px;!important" class="navbar">
+        <h1 class="logo">
+    
+            <span style="color: cadetblue;">CV's</span> Ocean
+        </h1>
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#cases">Cases</a></li>
+            <li> <a href="#blog">Blog</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </navbar>
         <main>
             <section class="box" id="st">
                 <section id="box1">
-                    <img id="main" width="200px" height="200px"
+                    <img id="main" width="200px" height="200px "
                         src="https://img.freepik.com/free-photo/portrait-handsome-smiling-model-sexy-stylish-man-dressed-shirt-trousers-fashion-hipster-male-posing-near-blue-wall-studio-isolated_158538-26679.jpg?w=2000"
                         alt="My Image">
                     <h1>Omar Abu Amear</h1>
