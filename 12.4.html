@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.4</title>
+    <style>
+.sample-heading {
+  padding: 1em;
+  border: 0.25em solid;
+  position: relative;
+}
+.sample-heading::before, .sample-heading::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+}
+.sample-heading::before {
+  top: -0.3em;
+  bottom: -0.3em;
+  left: 1em;
+  right: 1em;
+}
+.sample-heading::after {
+  left: -0.3em;
+  right: -0.3em;
+  top: 1em;
+  bottom: 1em;
+}
+
+
+ 
+
+    </style>
+</head>
+
+<body>
+<h1 class="sample-heading">
+    <span class="heading">Sample heading</span>
+</h1>
+
+</body>
+
+</html>
