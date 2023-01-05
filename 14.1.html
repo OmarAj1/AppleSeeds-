@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.2</title>
+    <style>
+
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;}
+            
+        
+            .box::before {
+                
+            content: '';
+            background-color: purple;
+            transition: width 5s ease-in  ;
+            position: absolute;
+            height: 100%;
+            width: 0px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+        .box:hover::before {
+            width: 100%;
+        }
+            
+</style>
+
+
+        
+</head>
+
+<body>
+    <main>
+        <div class="box"></div>
+
+    </main>
+</body>
+
+</html>
