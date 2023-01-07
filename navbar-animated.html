@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: white;
+                list-style: none;
+                margin-top: 20px;
+                padding: 0;
+            }
+
+            .navbar li {
+                height: 60px;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            .navbar a {
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 0 20px;
+            }
+
+            .navbar li:hover {
+                color: white;
+            }
+
+            .navbar li.active {
+                color: white;
+            }
+
+            
+            .navbar li::before,
+            .navbar li::after {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 3px;
+                background-color: black;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .navbar li::before {
+                top: -10px;
+                left: 10px;
+            }
+
+            .navbar li::after {
+                bottom: -10px;
+                right: 10px;
+            }
+
+            .navbar li:hover::before,
+            .navbar li:hover::after {
+                width: 100%;
+            }
+
+            .navbar li:hover::before {
+                left: 0;
+            }
+
+            .navbar li:hover::after {
+                right: 0;
+            }
+</style>
+<body>
+    <ul class="navbar">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+<!-- HTML for the navbar -->
+
+</html>
