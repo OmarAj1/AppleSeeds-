@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12.2</title>
     <style>
-            body {
-                background-color: aqua;
-            }
-  
-            .box {
+        body {
+            background-color: aqua;
+        }
+        
+        .box {
             width: 300px;
             height: 300px;
             background-color: red;
             position: relative;
-
-            }
-
-            .box:hover::before {
+        }
+        
+        .box:hover::before {
             content: '';
             background-color: purple;
-            position: absolute; 
+            position: absolute;
             height: 100%;
-            width: 50%; 
-            opacity: 0.7 ;
-            }
-
+            width: 50%;
+            opacity: 0.7;
+        }
     </style>
 </head>
+
 <body>
     <main>
         <div class="box"></div>
 
     </main>
 </body>
+
 </html>
